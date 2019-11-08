@@ -92,12 +92,17 @@ body{
 }
 
 
+
+
   @media screen and (max-width: 601px) {
     .brand-logo{
         margin:auto !important;
         display: initial!important;
         padding:10px!important
         
+    }
+    .page-footer{
+        position: relative !important;
     }
     
   }
