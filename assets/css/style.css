@@ -1,64 +1,58 @@
-.header
-{
-    background-color: white;
-    width:100%;
-    height:40px;
-    text-align: center;
-    padding: 15px;
-    margin: -10px 0px 10px -10px;
- 
+.home-col{
+    text-align: center !important;
+    margin-top: 10%;
+}
+.home-section{
+    background-image: url("../images/backgrnd2.gif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat, repeat;
+    margin-top: 0px !important;
+    min-width: 100%; 
+    min-height: 800px;
+}
+.img-cls{
+    min-height: 250px;
+    max-width: 280px;
 }
 
-
-#link1,#link
-{
-    float:right;
-    padding: 5px;
-    color: darkgray;
-}
-
-#link
-{
-    margin-right: 120px;
-
-}
-
-#link1
-{
-    border-right: 1px solid darkgray;
+.proj-card{
+    min-height: 350px;
+    max-width: 350px;
 }
 
 body{
-    background-color: darkgrey;
+   
+    font-family:'Roboto', sans-serif;
+    color:rgb(44, 28, 21);
+    /* background-color: rgb(240,200,128); */
+}
+.btn{
+    background: transparent !important;
+    /* color: rgb(241, 237, 217); */
+    color:rgb(44, 28, 21) !important;
+    height:36px !important;
 }
 
-.box1{
-
-    text-align: center;
+#bar{
+    height: 20px !important;
+ }
+ .vc_label_units {
     position: absolute;
-    width: 14%;
-    height: 70px;
-    background-color: lightseagreen;
-    color: white;
-    left:130px;
-    
+    right: 16%;
+    color: #999999;
 }
+	
+.project-section{
+    margin-top: 5%;
+    padding: 3%;
+    background-color: rgb(245,245,245);
+}	 
 
-#color{
 
-    color:lightseagreen;
-    padding:1.1rem;
-    border-bottom: 1px solid lightgray;
-    margin-top: auto;
-    
+#resume{
+    margin-top: 10px;
 }
-
-.box2{
-
-    margin:10px; 
-    padding: 20px;
-}
-
 .main-imag
 {
     float:left;
@@ -67,29 +61,29 @@ body{
     margin-right: 20px;
     
 }
-.container{
+/* .container{
     
     width: 100%;
     background-color: white;
     /* margin:30px 150px 0 120px; */
-    max-width: 960px;
+    /* max-width: 960px;
     margin: 0 auto;
-    clear: both;
+    clear: both; */
     
-}
-.brand-logo{
+/* } */ 
+/* .brand-logo{
     padding:0 10px !important;
     margin:0 15% !important;
     color:white;
     position: unset!important;
-}
-.section{
+} */
+/* .section{
     margin:10px 0;
-}
-.card-image img{
+} */
+/* .card-image img{
     width:150px;
     height:150px;
-}
+} */
 
 
 
