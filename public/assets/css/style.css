@@ -139,5 +139,12 @@ body{
     #home{
         padding-top: 30%;
     }
+    .home-section{
+        /* min-width: auto; */
+        background: url("../images/backgrnd2.gif") no-repeat top center;
+        background-size: 1000px;
+        /* background-position: center; */
+        min-height: 600px !important; 
+    }
     
   }
