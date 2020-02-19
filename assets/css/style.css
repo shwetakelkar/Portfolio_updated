@@ -12,13 +12,20 @@
     min-height: 800px;
 }
 .img-cls{
-    min-height: 250px;
-    max-width: 280px;
+    min-height: 300px;
+    max-width: 300px;
 }
-
+.me{
+    height:400px;
+}
 .proj-card{
-    min-height: 350px;
-    max-width: 350px;
+    min-height: 300px;
+    max-width: 300px;
+    padding: 0px !important;
+    margin: 0px;
+}
+.card-action{
+    padding: 0px !important; 
 }
 
 body{
@@ -48,7 +55,10 @@ body{
     padding: 3%;
     background-color: rgb(245,245,245);
 }	 
-
+.page-footer{
+    background-color: rgb(44, 28, 21) !important;
+    color:white;
+}
 
 #resume{
     margin-top: 10px;
@@ -61,31 +71,6 @@ body{
     margin-right: 20px;
     
 }
-/* .container{
-    
-    width: 100%;
-    background-color: white;
-    /* margin:30px 150px 0 120px; */
-    /* max-width: 960px;
-    margin: 0 auto;
-    clear: both; */
-    
-/* } */ 
-/* .brand-logo{
-    padding:0 10px !important;
-    margin:0 15% !important;
-    color:white;
-    position: unset!important;
-} */
-/* .section{
-    margin:10px 0;
-} */
-/* .card-image img{
-    width:150px;
-    height:150px;
-} */
-
-
 
 
   @media screen and (max-width: 601px) {
