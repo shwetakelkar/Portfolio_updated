@@ -12,15 +12,15 @@
     min-height: 800px;
 }
 .img-cls{
-    min-height: 300px;
+    min-height: 260px;
     max-width: 300px;
 }
 .me{
     height:400px;
 }
 .proj-card{
-    min-height: 300px;
-    max-width: 300px;
+    min-height: 260px;
+    max-width: 320px;
     padding: 0px !important;
     margin: 0px;
 }
