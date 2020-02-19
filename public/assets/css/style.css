@@ -11,6 +11,9 @@
     min-width: 100%; 
     min-height: 800px;
 }
+.font{
+    font-size: 25pt;
+}
 .icon{
     background-color: white !important;
 }
@@ -128,14 +131,13 @@ body{
 
 
   @media screen and (max-width: 601px) {
-    .brand-logo{
-        margin:auto !important;
-        display: initial!important;
-        padding:10px!important
-        
+    .font{
+        padding-top: 10px;
+        font-size: 20pt;
     }
-    .page-footer{
-        position: relative !important;
+
+    #home{
+        padding-top: 30%;
     }
     
   }
