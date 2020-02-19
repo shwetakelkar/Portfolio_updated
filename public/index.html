@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
+        <script src="https://code.jquery.com/jquery.js"></script>
     </head>
     <body>
        
@@ -224,9 +224,9 @@
                 <div class ="row">
                     <form>
                         <label>Name</label>
-                        <input class="text1" type="text"><br>
-                        <label>Email</label> <br> <input class="text1" type="text"><br>
-                        <label>Message</label> <br> <input id="text2"type="text"><br>
+                        <input class="name mand" type="text"><br>
+                        <label>Email</label> <br><input class="email mand" type="text"><br>
+                        <label>Message</label> <br> <input class="msg mand" type="text"><br>
                         <button class="submit btn">Submit</button>
                     </form>
                 </div>
@@ -247,7 +247,55 @@
                 </div>
                     
             </div>
-    </footer>       
+    </footer> 
+    
+    <script>
+
+        $(".submit").on("click", function(event) {
+            event.preventDefault();
+            let name = $(".name").val();
+            let email= $(".email").val();
+            let message = $(".msg").val();
+
+            function validator() {
+                var isFilled = true;
+                $(".mand").each(function() {
+                if ($(this).val() === "") {
+                    isFilled = false;
+                }
+                
+                });
+
+                return isFilled;
+            }
+            if(validator()){
+
+                var data = {
+                    name:name,
+                    email:email,
+                    message:message
+                }
+
+                $.ajax("/sendmail",{
+                    type: "POST",
+                    data:data 
+                    }) 
+                .then(function(res){
+                    alert("Thankyou !! Contact you soon.");
+                });
+
+                $(".email").val("");
+                $(".name").val("");
+                $(".msg").val("");
+            }
+            else{
+                alert("Please fill all the fields.")
+            }
+
+
+        });
+
+    </script>
         
     </body>
 
