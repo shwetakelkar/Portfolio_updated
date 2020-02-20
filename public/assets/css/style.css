@@ -128,6 +128,9 @@ body{
     margin-right: 20px;
     
 }
+.fab{
+    color: rgb(44, 28, 21);
+}
 
 
   @media screen and (max-width: 601px) {
